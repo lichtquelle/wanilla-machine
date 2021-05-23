@@ -1,0 +1,7 @@
+.github
+coverage
+node_modules
+src
+tmp
+www
+package-lock.json

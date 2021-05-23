@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="wanilla.css" />
+    <title>{{ page.title }}</title>
+  </head>
+  <body class="w-body">
+    <header class="w-header">{{ include /includes/header.html }}</header>
+
+    <main class="w-content">
+      <div class="w-wrapper">{{ markdown }}</div>
+    </main>
+
+    <footer class="w-footer">{{ include /includes/footer.html }}</footer>
+  </body>
+</html>

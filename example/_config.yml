@@ -1,0 +1,11 @@
+name: My Awesome Website
+
+description: > # this means to ignore newlines until "show_excerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml.
+
+repository: https://github.com/lichtquelle/wanilla-machine
+
+author:
+  user: '@yandeu'
+  website: https://github.com/yandeu
