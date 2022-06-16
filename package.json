@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "bin": "lib/bin.js",
+  "type": "module",
   "scripts": {
     "start": "npm run dev",
     "dev": "npm run build && npm-run-all --parallel dev:*",
