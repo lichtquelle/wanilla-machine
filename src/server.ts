@@ -1,13 +1,16 @@
 // imports
 import { error, step } from 'node-cli'
+import path, { dirname } from 'path'
 import { AddressInfo } from 'net'
 import express from 'express'
+import { fileURLToPath } from 'url'
 import http from 'http'
 import { join } from 'path'
-import { middleware } from './middleware'
+import { middleware } from './middleware.js'
 import openDefaultBrowser from 'open'
-import path from 'path'
 import { readFile } from 'fs/promises'
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 // server
 export class Server {

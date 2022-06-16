@@ -6,8 +6,8 @@
 
 import { existsSync, readFileSync } from 'fs'
 import { join } from 'path'
-import { parseYAML } from './parse'
-import { regex } from './regex'
+import { parseYAML } from './parse.js'
+import { regex } from './regex.js'
 
 export const isHTML = (root: string, url: string) => {
   if (regex.html.test(url)) return true

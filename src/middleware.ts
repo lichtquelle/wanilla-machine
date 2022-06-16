@@ -4,12 +4,12 @@
  * @license     {@link https://github.com/lichtquelle/wanilla-machine/blob/main/LICENSE LICENSE}
  */
 
-import { getConfigFile, getHTML, getLayout, isHTML } from './misc'
-import { MiddlewareOptions } from './types'
-import { brackets } from './brackets'
-import { defaultLayout } from './defaultLayout'
+import { getConfigFile, getHTML, getLayout, isHTML } from './misc.js'
+import { MiddlewareOptions } from './types.js'
+import { brackets } from './brackets.js'
+import { defaultLayout } from './defaultLayout.js'
 import { join } from 'path'
-import { parseMarkdown } from './parse'
+import { parseMarkdown } from './parse.js'
 
 export const middleware = (options: MiddlewareOptions) => {
   const { root, debug = false, dev = false } = options

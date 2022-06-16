@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 
 import { Arguments, success } from 'node-cli'
-import { Server } from './server'
-import { VERSION } from './version'
-import { copyDir } from './helpers'
-import { join } from 'path'
+import { dirname, join } from 'path'
+import { Server } from './server.js'
+import { VERSION } from './version.js'
+import { copyDir } from './helpers.js'
+import { fileURLToPath } from 'url'
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 const Args = new Arguments()
 

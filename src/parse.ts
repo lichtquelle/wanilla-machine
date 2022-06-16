@@ -4,9 +4,9 @@
  * @license   {@link https://github.com/lichtquelle/wanilla-machine/blob/main/LICENSE LICENSE}
  */
 
-const YAML = require('yaml')
-const fs = require('fs/promises')
-const { parseMarkdown: _parseMarkdown } = require('@yandeu/parse-markdown')
+import YAML from 'yaml'
+import { parseMarkdown as _parseMarkdown } from '@yandeu/parse-markdown'
+import fs from 'fs/promises'
 
 export const parseYAML = yaml => {
   return YAML.parse(yaml)
@@ -15,5 +15,5 @@ export const parseYAML = yaml => {
 export const parseMarkdown = async (file: string): Promise<{ markdown: string; yaml: { layout: string } }> => {
   const data = await fs.readFile(file, { encoding: 'utf-8' })
   const md = await _parseMarkdown(data)
-  return md
+  return md as { markdown: string; yaml: { layout: string } }
 }

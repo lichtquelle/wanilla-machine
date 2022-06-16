@@ -1,5 +1,9 @@
 import { Server } from '../lib/server.js'
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
 import { join } from 'path'
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 const server = new Server()
 let port

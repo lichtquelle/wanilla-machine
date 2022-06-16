@@ -4,11 +4,10 @@
  * @license   {@link https://github.com/lichtquelle/wanilla-machine/blob/main/LICENSE LICENSE}
  */
 
-import { BracketsOptions } from './types'
-import { regex } from './regex'
-
-const path = require('path')
-const fs = require('fs')
+import { BracketsOptions } from './types.js'
+import fs from 'fs'
+import path from 'path'
+import { regex } from './regex.js'
 
 /**
  *
