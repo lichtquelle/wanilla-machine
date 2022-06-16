@@ -1,6 +1,6 @@
-const { Server } = require('../lib/server')
-const request = require('supertest')
-const { join } = require('path')
+import { Server } from '../lib/server.js'
+import { join } from 'path'
+import request from 'supertest'
 
 const server = new Server()
 let port

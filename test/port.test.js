@@ -1,5 +1,5 @@
-const { Server } = require('../lib/server')
-const { join } = require('path')
+import { Server } from '../lib/server.js'
+import { join } from 'path'
 
 const server = new Server()
 let port

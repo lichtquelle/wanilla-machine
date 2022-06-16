@@ -13,7 +13,7 @@
     "build": "npm run version && tsc",
     "prune": "rimraf lib node_modules package-lock.json && npm i && npm run build",
     "clean": "rimraf lib",
-    "test": "jest --collectCoverage",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "version": "extract version src/version.ts && prettier --write src/version.ts",
     "format:check": "prettier --check src/**/*",
     "format": "prettier --write src/**/*",
