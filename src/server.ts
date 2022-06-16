@@ -107,7 +107,7 @@ export class Server {
           error(`Could not open browser at http://localhost:${this.port}`, false)
         })
       }
-    } catch (err) {
+    } catch (err: any) {
       error(err.message, true)
     }
   }
