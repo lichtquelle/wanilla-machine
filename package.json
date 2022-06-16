@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/lichtquelle/wanilla-machine#readme",
   "dependencies": {
-    "@yandeu/parse-markdown": "^0.0.1",
+    "@yandeu/parse-markdown": "^0.0.2",
     "express": "^4.17.1",
     "node-cli": "^0.2.4",
     "open": "^8.0.9"
