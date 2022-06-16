@@ -34,19 +34,10 @@
   },
   "homepage": "https://github.com/lichtquelle/wanilla-machine#readme",
   "dependencies": {
+    "@yandeu/parse-markdown": "^0.0.1",
     "express": "^4.17.1",
     "node-cli": "^0.2.4",
-    "open": "^8.0.9",
-    "rehype-stringify": "^8.0.0",
-    "remark-frontmatter": "^3.0.0",
-    "remark-gfm": "^1.0.0",
-    "remark-parse": "^9.0.0",
-    "remark-rehype": "^8.1.0",
-    "remark-stringify": "^9.0.1",
-    "to-vfile": "^7.0.0",
-    "unified": "^9.2.1",
-    "vfile-reporter": "^7.0.0",
-    "yaml": "^1.10.2"
+    "open": "^8.0.9"
   },
   "devDependencies": {
     "@types/express": "^4.17.11",
